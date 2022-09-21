@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/public/img/LogoXT.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/style/style2.css">
+    <title>Panel de usuario</title>
+</head>
+<body>
+    <section class="top-nav">
+            <div>
+                  <a href="/index3.html"><img src="/public/img/5.jpeg" alt="imagen de usuario" id="user"></a>
+            </div>
+            <div>
+                  <a href="/index2.html"><img src="/public/img/Logoxt.png" alt="logo de xarxatec" id="logo"></a>
+            </div>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+            </label>
+        <ul class="menu">
+            <li><a href="/index2.html">Inicio</a></li>
+            <li><a href="/index3.html">Perfil</a></li>
+            <li><a href="/index4.html">Mensajes</a></li>
+            <li><a href="/index5.html">Recarga Wallet points</a></li>
+            <li><a href="/index.html">Cerrar sesión</a></li>
+        </ul>
+    </section>
+      <div class="slider">
+            <ul>
+                  <li><a href="/index4.html"><img src="/public/img/Search-Message-WF-200.png" alt="icono mensajes"><p>Revisa tus mensajes, alguien puede haberte premiado por tu ayuda</p></a></li>
+                  <li><a href="#myWallet"><img src="/public/img/Wallet-WF-200.png" alt="icono wallet"><p>Consulta tus Wallet points</p></a></li>
+                  <li><a href="#main2"><img src="/public/img/Team-01-200.png" alt="icono de equipo"><p>Recompensa a tus compañer@s</p></a></li>
+                  <li><img src="/public/img/Source-Code-200.png" alt="icono programming"></li>
+            </ul>
+      </div>    
+      <div id="main1">
+            <p id="textLevel">Nivel 1</p>
+            <label for="progressBar" id="yourPoints">Tienes 150 Activa Points</label>
+            <progress id="amount" max="200" value="150"></progress> 
+      </div>
+      <div id="myWallet">
+            <img src="/public/img/Wallet-WF-152.ico" alt="Imagen cartera" id="wallet">
+            <hr>
+            <p id="apointsS">Wallet points:</p>
+            <hr>
+            <p id="apointsAmount">80</p>
+      </div>
+      <div id="main2">
+            <p id="formHead">Recompensa a tus compañer@s</p>
+          <form action="#" method="post">
+            <p>
+                <label for="name" id="studentName">Elige a quien vas a recompensar<label>
+            </p>
+            <div class="container">
+                <input type="radio" name="student"><br><img src="/public/img/Alba.jfif" alt=""><p>Alba</p><input/>
+                <input type="radio" name="student"><br><img src="/public/img/Arantxa.jfif" alt=""><p>Arantxa</p><input/>
+                <input type="radio" name="student"><br><img src="/public/img/Carla.jfif" alt=""><p>Carla</p><input/>
+                <input type="radio" name="student"><br><img src="/public/img/Cristina.jfif" alt=""><p>Cristina</p><input/>
+                <input type="radio" name="student"><br><img src="/public/img/Enrique.jfif" alt=""><p>Enrique</p><input/>
+                <input type="radio" name="student"><br><img src="/public/img/Gregorio (1).jfif" alt=""><p>Gregorio</p><input/>
+                <input type="radio" name="student"><br><img src="/public/img/Juan.jfif" alt=""><p>Juan</p><input/>
+                <input type="radio" name="student"><br><img src="/public/img/Miguel.jfif" alt=""><p>Miguel</p><input/>
+                <input type="radio" name="student"><br><img src="/public/img/Oscar.jfif" alt=""><p>Oscar</p><input/>
+                <input type="radio" name="student"><br><img src="/public/img/Yeray.jfif" alt=""><p>Yeray</p><input/>
+            </div>
+          <p>
+                <label for="studentPoint" id="stPoint">Nº de ActivaPoints</label>
+          </p>
+          <p>
+                <input type="number" name="ActivaPoints" id="aPoints" min="1" max="100" required>
+          </p>
+          <p id="why">Motivo</p>
+          <p id="message">
+                <textarea name="message" cols="15" rows="5"></textarea>
+          </p>
+          <p id="send">
+                <input type="submit">
+          </p>
+        </form>
+      </div>
+      <hr>
+</body>
+</html>

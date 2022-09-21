@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/public/img/LogoXT.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/style/style3.css">
+    <title>Editar usuario</title>
+</head>
+<body>
+    <main>
+        <section class="top-nav">
+            <div>
+                <a href="/index3.html"><img src="/public/img/5.jpeg" alt="imagen de usuario" id="user"></a>
+            </div>
+            <div>
+                <a href="/index2.html"><img src="/public/img/Logoxt.png" alt="logo de xarxatec" id="logo"></a>
+            </div>
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+                <li><a href="/index2.html">Inicio</a></li>
+                <li><a href="/index3.html">Perfil</a></li>
+                <li><a href="/index4.html">Mensajes</a></li>
+                <li><a href="/index5.html">Recarga Wallet points</a></li>
+                <li><a href="/index.html">Cerrar sesión</a></li>
+            </ul>
+        </section>
+        <div id="changeUserSkills">
+                <p id="formHeader">Imagen de perfil</p>
+                <hr>
+            <form name="change" type="POST" enctype="multipart/formdata" >
+                <p><label for="image"></label></p>
+                <img src="/public/img/5.jpeg" alt="imágen de usuario" id="userForm">
+                <input type="file" name="image" id="select"/>
+                <button id="button">Modificar</button>
+                <p id="formHeader">Información personal</p>
+                <hr> 
+              <div class="personal">
+                <p id="userName">
+                    <label for="nombre">Nombre de usuario</label>
+                    <input type="text" name="nombre" id="uName" placeholder="AlbertSales">
+                </p>
+                <p id="userMail">
+                    <label for="mail">Correo electrónico</label>
+                    <input type="mail" name="mail" id="mail" placeholder="albert.sales@xarxatecactiva.com">
+                </p>
+                <p id="userPhone">
+                    <label for="phone">Número de teléfono</label>
+                    <input type="phone" name="phone" id="uTel" placeholder="664647589">
+                </p>
+              </div>
+                <p id="save">
+                    <button>Guardar cambios</button>
+                </p>
+                <br>
+            </form>
+        </div>
+        <br>
+    </main>
+</body>
+</html>

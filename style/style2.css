@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo');
+
+html, body {
+  margin: 0;
+  height: 100%;
+  background: url("/public/img/fondoWeb.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+* {
+  font-family: "Heebo";
+  box-sizing: border-box;
+}
+
+.top-nav {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ededed;
+  color: #FFF;
+  height: 50px;
+  padding: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+#logo {
+    width: 200px;
+    height: 35px;
+    margin-top: 5%;
+}
+
+#user {
+    width: 40px;
+    height: 40px;
+    margin-top: 20%;
+    border-radius: 50%;
+    border: 2px #e0004d solid;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+  text-align: center;
+  font-size: 1em;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: rgb(224,0,77);
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+#main1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "textLevel yourPoints"
+    "textLevel amount";
+    margin: 10% auto;
+    box-shadow: 2px 2px 7px 1px #b6666f;
+    background-color: rgb(237,237,237,0.75);
+    width: 90%;
+}
+
+#textLevel {
+    font-size: 1em;
+    color: rgb(237,237,237);
+    font-weight: bold;
+    width: 6em;
+    height: 6em;
+    border: 0.1em rgb(7,29,73) solid;
+    border-radius: 50%;  
+    background:#e0004d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20%;
+    margin-left: 4%;
+    padding:3%
+}
+
+#yourPoints {
+  margin-right: 2%;
+  margin-top: 30%;
+}
+
+progress[value] {
+  margin-left: 98%;
+  margin-top: 5%;
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: white;
+}
+
+progress[value]::-moz-progress-bar {
+  background-color: white;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: #071d49;
+}
+
+progress[value]::-moz-progress-value {
+  background-color: #071d49;
+}
+
+.slider {
+  width: 90%;
+  margin: 10% auto;
+  overflow: hidden;
+  background-color: rgb(237,237,237,0.75);
+  box-shadow: 2px 2px 7px 1px #b6666f;
+}
+
+.slider ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+
+  animation: cambio 10s infinite;
+  animation-direction:alternate;
+}
+
+.slider li {
+  width: 100%;
+  list-style: none;
+}
+
+.slider img {
+  width: 60%;
+  margin: auto 20%;
+}
+
+.slider ul li {
+  text-shadow: 1px 1px 1px #b6666f;
+}
+
+@keyframes cambio {
+  0% {margin-left: 0;}
+  40% {margin-left: 0;}
+  
+  45% {margin-left: -100%;}
+  60% {margin-left: -100%;}
+
+  70% {margin-left: -200%;}
+  100% {margin-left: -200%;}
+}
+
+#myWallet {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: space-around;
+  background-color: rgb(237,237,237,0.75);
+  box-shadow: 2px 2px 7px 1px #b6666f;
+  margin: auto;
+  width: 90%;
+}
+
+#myWallet, p {
+  text-align: center;
+  color: #071d49;
+  font-weight: bold;
+}
+
+#apointsAmount {
+  font-size: 2.5em;
+  margin-right: 2%;
+  color: #e0004d;
+}
+
+#wallet {
+  width: 30%;
+  margin-left: 2%;
+}
+
+#main2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10% auto;
+    box-shadow: 2px 2px 7px 1px #b6666f;
+    background-color: rgb(237,237,237,0.75);
+    width: 90%;
+}
+
+#formHead {
+  font-size: 1.2em;
+  font-weight: bold;
+  color:#071d49;
+}
+
+form {
+    border: 0.1em rgb(7,29,73) solid;
+    box-shadow: 2px 2px 7px 1px #b6666f;
+    text-align: center;
+    background-color: rgb(237,237,237);
+    width: 90%;
+    margin-bottom: 5%;
+}
+
+#aPoints {
+    color: black;
+    font-weight: normal;
+}
+#main2, label {
+    font-size: 0.8em;
+    color: #b6666f;
+    font-weight: bolder;
+}
+#main2, input {
+    color:#b6666f;
+    font-weight: bold;
+  
+}
+#main2> textarea {
+    color: black;
+    font-weight: normal;
+}
+#message>textarea {
+  width: 50%;
+}
+#why {
+    font-size: 0.8em;
+    color: #b6666f;
+    font-weight: bolder;
+}
+#message {
+    margin-left: 1%;
+}
+.container {
+  background-color:#ffffff;
+}
+form>div>input{
+  border: none;
+  background-color:#ffffff;
+}
+.container {
+  margin: auto;
+  border: 1px solid grey;
+  width: 50%;
+  height: 110px;
+  overflow-y: scroll;
+}
+.container>img {
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color:  #ededed;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+}
+@media (min-width: 780px) {
+  .menu {
+    font-size: 0.8em;
+  }
+  #user {
+    width: 40px;
+    height: 40px;
+    margin-top: 20%;
+    border-radius: 50%;
+    border: 2px #e0004d solid;
+  }
+  #logo {
+    width: 200px;
+    height: 35px;
+    margin-top: 3%;
+  }
+  .top-nav {
+    height: 50px;
+  }
+  .slider {
+    width: 60%;
+    height: 350px;
+    margin: 5% 3% 13%;
+    overflow: hidden;
+    background-color: rgb(237,237,237,0.75);
+    box-shadow: 2px 2px 7px 1px #b6666f;
+  }
+  #main1 {
+    display: flex;
+    flex-direction: column;
+    margin: -51.2% 3% 5% auto;
+    box-shadow: 2px 2px 7px 1px #b6666f;
+    background-color: rgb(237,237,237,0.75);
+    width: 30%;
+    height: 350px;
+    margin-top: -58%;
+  }
+  #textLevel {
+    font-size: 2em;
+    width: 5em;
+    height: 5em;
+    margin: 5% auto;
+    padding:3%
+  }
+  progress[value] {
+    
+    margin: 5% auto;
+    width: 68%;
+    height: 20px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  #yourPoints {
+    font-size: 1.2em;
+    margin: 20% auto 10%;
+  }
+  #myWallet {
+    margin: auto ;
+    width: 94%;
+    height: 250px;
+  }
+  #wallet {
+    width: 25%;
+  }
+  #apointsS {
+    font-size: 1.5em;
+  }
+  #apointsAmount {
+    font-size: 5em;
+  }
+  #main2 {
+    margin: 5% auto 5% auto;
+    width: 94%;
+ }
+  #formHead {
+  font-size: 1.5em;
+ }
+  #main2, form, p {
+  font-size: 1.2em;
+ }
+  #aPoints {
+  width: 15%;
+  width: 14%;
+  height: 30px;
+ }
+  textarea {
+  height: 190px;
+ }
+  #send {
+  font-size: 1em;
+ }
+  #why {
+    font-size: 0.9em;
+  }
+  .container {
+  margin: auto;
+  border: 1px solid grey;
+  width: 40%;
+  height: 200px;
+  overflow-y: scroll;
+}
+ .container>img {
+  width: 50%;
+}
+}
+@media (min-width: 1024px) {
+  #user {
+    width: 50px;
+    height: 50px;
+    margin-top: 20%;
+    border-radius: 50%;
+    border: 2px #e0004d solid;
+  }
+  #logo {
+    width: 300px;
+    height: 45px;
+    margin-top: 3%;
+  }
+  .top-nav {
+    height: 60px;
+  }
+  #main1 {
+    margin-top: -46.8%;
+    width: 25%;
+    height: 450px;
+  }
+  #textLevel {
+    font-size: 2em;
+  }
+  #yourPoints {
+    font-size: 1.3em;
+    margin-right: auto;
+    margin-top: 30%;
+  }
+  .slider {
+    width: 67%;
+    height: 450px;
+    margin: 3% 3%;
+    overflow: hidden;
+    background-color: rgb(237,237,237,0.75);
+    box-shadow: 2px 2px 7px 1px #b6666f;
+  }
+  .slider>ul>li {
+    font-size: 1.5em;
+  }
+  .slider img {
+    width: 40%;
+    margin: auto 30%;
+  }
+  .slider ul li {
+    font-size: 0.8em;
+  }
+  #wallet {
+    width: 15%
+  }
+  #myWallet {
+    height: 200px;
+  }
+  #apointsS {
+    font-size: 1.5em;
+  }
+  #formHead {
+    font-size: 1em;
+  }
+  #main2 label {
+    font-size: 0.5em;
+  }
+  #why {
+    font-size: 0.7em;
+  }
+  form {
+    width: 60%;
+  }
+  #send {
+    font-size: 0.7em;
+  }
+}
+@media (min-width: 1280px) {
+  #user {
+    width: 50px;
+    height: 50px;
+    margin-top: 20%;
+    border-radius: 50%;
+    border: 2px #e0004d solid;
+  }
+  #logo {
+    width: 300px;
+    height: 45px;
+    margin-top: 3%;
+  }
+  .top-nav {
+    height: 60px;
+  }
+  #main1 {
+    margin-top: -38.1%;
+    width: 25%;
+    height: 450px;
+  }
+  #textLevel {
+    font-size: 2em;
+  }
+  #yourPoints {
+    font-size: 1.3em;
+    margin-right: auto;
+    margin-top: 30%;
+  }
+  .slider {
+    width: 67%;
+    height: 450px;
+    margin: 3% 3%;
+    overflow: hidden;
+    background-color: rgb(237,237,237,0.75);
+    box-shadow: 2px 2px 7px 1px #b6666f;
+  }
+  .slider>ul>li {
+    font-size: 1.5em;
+  }
+  .slider img {
+    width: 40%;
+    margin: auto 30%;
+  }
+  .slider ul li {
+    font-size: 0.8em;
+  }
+  #wallet {
+    width: 15%
+  }
+  #myWallet {
+    height: 200px;
+  }
+  #apointsS {
+    font-size: 1.5em;
+  }
+  #formHead {
+    font-size: 1em;
+  }
+  #main2 label {
+    font-size: 0.5em;
+  }
+  #why {
+    font-size: 0.7em;
+  }
+  form {
+    width: 60%;
+  }
+  #send {
+    font-size: 0.7em;
+  }
+}
+
+  
