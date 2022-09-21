@@ -117,11 +117,12 @@ a {
   animation: myAnim 2s ease 0s 1 normal backwards;
 }
 .initialTxt {
-  width: 90%;
+  width: 95%;
   font-size: 0.9em;
-  margin: 10% auto;
+  margin: 5% auto;
   background-color: rgb(237,237,237,0.75);
   box-shadow: 2px 2px 7px 1px #b6666f;
+  border-radius: 0em 4em;
 }
 form {
   display: flex;
@@ -130,7 +131,7 @@ form {
   justify-content: space-evenly;
   width: 70%;
   height: 200px;
-  margin: auto;
+  margin: 10% auto 5% auto;
   background-color: rgb(224,0,77);
   box-shadow: 0 0.5em 0.5em 0;
 
@@ -157,6 +158,16 @@ form {
 		opacity: 1;
 		transform: translateY(0);
 	}
+}
+@media (min-width: 425px) {
+  .initialTxt {
+    width: 85%;
+    font-size: 0.9em;
+    margin: 5% auto;
+    background-color: rgb(237,237,237,0.75);
+    box-shadow: 2px 2px 7px 1px #b6666f;
+    border-radius: 0em 4em;
+  }
 }
 @media (max-width: 768px) {
     .menu-button-container {
@@ -197,3 +208,47 @@ form {
       border-bottom: 1px solid #444;
     }
   }
+@media (min-width: 780px) {
+  .menu {
+    font-size: 0.8em;
+  }
+  #user {
+    width: 40px;
+    height: 40px;
+    margin-top: 20%;
+    border-radius: 50%;
+    border: 2px #e0004d solid;
+  }
+  #logo {
+    width: 200px;
+    height: 35px;
+    margin-top: 3%;
+  }
+  .top-nav {
+  height: 50px;
+  }
+  .initialTxt {
+    width: 85%;
+    font-size: 0.9em;
+    margin: 5% auto;
+    background-color: rgb(237,237,237,0.75);
+    box-shadow: 2px 2px 7px 1px #b6666f;
+    border-radius: 0em 6em;
+  }
+  .request {
+    margin-top: -5%;
+  }
+}
+@media (min-width: 1024px) {
+  .initialTxt {
+    width: 80%;
+    font-size: 0.9em;
+    margin: 5% auto;
+    background-color: rgb(237,237,237,0.75);
+    box-shadow: 2px 2px 7px 1px #b6666f;
+    border-radius: 0em 8em;
+  }
+  .header {
+    font-size: 1.2em;
+  }
+}
