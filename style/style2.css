@@ -169,7 +169,10 @@ progress[value]::-webkit-progress-value {
 progress[value]::-moz-progress-value {
   background-color: #071d49;
 }
-
+.main {
+  display: flex;
+  flex-direction: column;
+}
 .slider {
   width: 90%;
   margin: 10% auto;
@@ -311,7 +314,17 @@ form>div>input{
 .container>img {
   width: 50%;
 }
-@media (max-width: 768px) {
+@media (min-width:375px) {
+}
+@media (min-width: 425px) {
+  .slider {
+    margin-top: 7%;
+  }
+  .slider img {
+    width: 50%;
+  }
+}
+@media (max-width: 780px) {
   .menu-button-container {
     display: flex;
   }
@@ -376,6 +389,9 @@ form>div>input{
     overflow: hidden;
     background-color: rgb(237,237,237,0.75);
     box-shadow: 2px 2px 7px 1px #b6666f;
+  }
+  .slider img {
+    margin: auto 25% ;
   }
   #main1 {
     display: flex;
@@ -493,8 +509,8 @@ form>div>input{
     background-color: rgb(237,237,237,0.75);
     box-shadow: 2px 2px 7px 1px #b6666f;
   }
-  .slider>ul>li {
-    font-size: 1.5em;
+  .slider p {
+    font-size: 1.8em;
   }
   .slider img {
     width: 40%;
@@ -565,12 +581,13 @@ form>div>input{
     background-color: rgb(237,237,237,0.75);
     box-shadow: 2px 2px 7px 1px #b6666f;
   }
-  .slider>ul>li {
+  .slider p {
     font-size: 1.5em;
+    margin-top: -2%;
   }
   .slider img {
-    width: 40%;
-    margin: auto 30%;
+    width: 30%;
+    margin: 6% 35%;
   }
   .slider ul li {
     font-size: 0.8em;
@@ -600,5 +617,22 @@ form>div>input{
     font-size: 0.7em;
   }
 }
-
+@media (min-width: 1440px) {
+  .slider img {
+    margin-top: 2% ;
+  }
+  .slider p {
+    font-size: 1.7em;
+  }
+  #main1 {
+    margin-top: -34.2%;
+  }
+  #myWallet {
+    margin-top: -2%;
+    height: 250px;
+  }
+  #main2 {
+    margin-top: 3%;
+  }
+}
   
