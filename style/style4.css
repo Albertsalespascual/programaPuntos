@@ -194,7 +194,10 @@ a {
     grid-column-start: 2;
     grid-column-end: 5;
   }
-  @media (max-width: 768px) {
+  @media(min-width: 320px) {
+
+  }
+  @media (max-width: 780px) {
     .menu-button-container {
       display: flex;
     }
@@ -269,6 +272,9 @@ a {
       .top-nav {
         height: 60px;
       }
+      #messages {
+        width: 70%;
+      }
   }
   @media (min-width: 1280px) {
     #user {
@@ -285,5 +291,8 @@ a {
       }
       .top-nav {
         height: 60px;
+      }
+      #messages {
+        width: 60%;
       }
   }

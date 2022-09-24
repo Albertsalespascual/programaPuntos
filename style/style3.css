@@ -208,11 +208,13 @@ hr {
       height: 50px;
     }
     #changeUserSkills {
+      display: flex;
+      flex-direction: column;
       width:80%;
       height: 400px;
     }
     #formHeader {
-      margin-top: 10%;
+      margin-top: 5%;
       margin-bottom: 1%;
     }
     #userForm {
@@ -271,8 +273,11 @@ hr {
     .top-nav {
       height: 60px;
     }
+    #formHeader {
+      margin-top: 3%;
+    }
     #changeUserSkills {
-      margin-top: -5%;
+      margin-top: 3%;
       height: 450px;
     }
     #button {

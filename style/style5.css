@@ -159,7 +159,15 @@ form {
 		transform: translateY(0);
 	}
 }
+@media (min-width: 320px) {
+  .initialTxt {
+    margin-top: 10%;
+  }
+}
 @media (min-width: 425px) {
+  .header {
+    width: 95%;
+  }
   .initialTxt {
     width: 85%;
     font-size: 0.9em;
@@ -169,7 +177,7 @@ form {
     border-radius: 0em 4em;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 780px) {
     .menu-button-container {
       display: flex;
     }
@@ -227,10 +235,14 @@ form {
   .top-nav {
   height: 50px;
   }
+  .header {
+    width: 80%;
+  }
   .initialTxt {
-    width: 85%;
+    width: 70%;
+    height: 440px;
     font-size: 0.9em;
-    margin: 5% auto;
+    margin: 3% auto;
     background-color: rgb(237,237,237,0.75);
     box-shadow: 2px 2px 7px 1px #b6666f;
     border-radius: 0em 6em;
@@ -238,17 +250,26 @@ form {
   .request {
     margin-top: -5%;
   }
+  .request form {
+    height: 300px;
+  }
 }
 @media (min-width: 1024px) {
   .initialTxt {
-    width: 80%;
+    width: 60%;
+    height: 550px;
     font-size: 0.9em;
-    margin: 5% auto;
+    margin: 3% auto;
     background-color: rgb(237,237,237,0.75);
     box-shadow: 2px 2px 7px 1px #b6666f;
     border-radius: 0em 8em;
   }
   .header {
-    font-size: 1.2em;
+    width: 90%;
+    font-size: 1.3em;
+  }
+  .request form {
+    width: 60%;
+    height: 350px;
   }
 }
