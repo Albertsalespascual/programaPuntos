@@ -3,7 +3,7 @@
 html, body {
   margin: 0;
   height: 100%;
-  background: url("/public/img/fondoWeb.jpg")no-repeat center center fixed;
+  background: url("/public/img/fondoweb.png")no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -109,7 +109,7 @@ a {
   }
   #messages {   
    display: grid;
-   grid-template-columns: repeat(4,1fr);
+   grid-template-columns: 10% 35% 35% 20%;
    grid-template-rows: auto;    
    width: 90%;
    margin: 5% auto;
@@ -144,7 +144,6 @@ a {
     grid-row-start: 1;
     grid-row-end: 2;
     background-color: rgb(237,237,237,0.75);
-    padding-left: 3%;
   }
   .mi {
     grid-column-start: 1;
