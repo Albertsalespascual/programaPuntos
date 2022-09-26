@@ -525,7 +525,11 @@ border-radius: 5px;
     margin-left: 5%;
   }
   .slider img {
-    margin: auto 25% ;
+    width: 45%;
+    margin: auto 28% ;
+  }
+  .slider p {
+    margin: auto;
   }
   #main1 {
     grid-column-start: 7;
@@ -779,21 +783,71 @@ border-radius: 5px;
   }
 }
 @media (min-width: 1440px) {
+  .slider {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 95%;
+    height: 450px;
+    overflow: hidden;
+    background-color: rgb(237,237,237,0.75);
+    box-shadow: 2px 2px 7px 1px #b6666f;
+    margin-left: 5%;
+  }
+  .slider ul li {
+    font-size: 0.8em;
+  }
   .slider img {
-    margin-top: 2% ;
+    margin: auto 35%;
   }
   .slider p {
-    font-size: 1.7em;
+    margin: auto;
   }
   #main1 {
-    margin-top: -34.2%;
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 7px 1px #b6666f;
+    background-color: rgb(237,237,237,0.75);
+    width: 85%;
+    height: 450px;
+    margin-top: 20%;
+    margin-left: 1%;
   }
   #myWallet {
-    margin-top: -2%;
-    height: 250px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    flex-direction: column;
+    width: 90%;
+    height: 450px;
+    margin: 0% 0% auto 9%;
   }
-  #main2 {
+  #wallet {
     margin-top: 3%;
+    width: 50%;
+  }
+  #apointsS {
+    font-size: 1em;
+    margin-top: auto;
+  }
+  #apointsAmount {
+    margin: auto;
+    font-size: 4em;
+  }
+  .ContainerCenter {
+    grid-column-start: 3;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 90% ;
+    height: 450px;
+    margin: auto;
   }
 }
   
