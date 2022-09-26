@@ -197,7 +197,7 @@ a {
   @media(min-width: 320px) {
 
   }
-  @media (max-width: 780px) {
+  @media (max-width: 768px) {
     .menu-button-container {
       display: flex;
     }

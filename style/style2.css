@@ -121,7 +121,11 @@ a {
     background-color: rgb(237,237,237,0.75);
     width: 90%;
 }
-
+#main1 label {
+  color: #b6666f;
+  font-weight: bold;
+  font-size: 0.8em;
+}
 #textLevel {
     font-size: 1em;
     color: rgb(237,237,237);
@@ -142,7 +146,7 @@ a {
 
 #yourPoints {
   margin-right: 2%;
-  margin-top: 30%;
+  margin-top: 40%;
 }
 
 progress[value] {
@@ -242,78 +246,199 @@ progress[value]::-moz-progress-value {
   width: 30%;
   margin-left: 2%;
 }
-
-#main2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10% auto;
-    box-shadow: 2px 2px 7px 1px #b6666f;
-    background-color: rgb(237,237,237,0.75);
-    width: 90%;
-}
-
-#formHead {
-  font-size: 1.2em;
-  font-weight: bold;
-  color:#071d49;
-}
-
-form {
-    border: 0.1em rgb(7,29,73) solid;
-    box-shadow: 2px 2px 7px 1px #b6666f;
-    text-align: center;
-    background-color: rgb(237,237,237);
-    width: 90%;
-    margin-bottom: 5%;
-}
-
-#aPoints {
-    color: black;
-    font-weight: normal;
-}
-#main2, label {
-    font-size: 0.8em;
-    color: #b6666f;
-    font-weight: bolder;
-}
-#main2, input {
-    color:#b6666f;
-    font-weight: bold;
-  
-}
-#main2> textarea {
-    color: black;
-    font-weight: normal;
-}
-#message>textarea {
-  width: 50%;
-}
-#why {
-    font-size: 0.8em;
-    color: #b6666f;
-    font-weight: bolder;
-}
-#message {
-    margin-left: 1%;
-}
-.container {
-  background-color:#ffffff;
-}
-form>div>input{
-  border: none;
-  background-color:#ffffff;
-}
-.container {
+.student {
+  display: grid;
+  grid-template-columns: 10% 40% 40% 10%;
+  grid-template-rows: auto;
+  background-color: rgb(237,237,237,0.75);
+  box-shadow: 2px 2px 7px 1px #b6666f;
+  margin: 10% auto;
+  width: 90%;
+}   
+#select {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
   margin: auto;
-  border: 1px solid grey;
-  width: 50%;
-  height: 110px;
-  overflow-y: scroll;
+  text-align: center;
+  font-weight: bold;
+  color: #071d49;
 }
-.container>img {
-  width: 50%;
+.s1 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
+.s2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.s3 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.s4 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+.s5 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+.s6 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.s7 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.s8 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.s9 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+.s10 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+.s1,.s2,.s3,.s4,.s5,.s6,.s7,.s8,.s9,.s10, p {
+  text-align: center;
+  color: #071d49;
+}
+.ContainerCenter{
+display: flex;
+align-items: center;
+flex-direction: column;
+width: 90%;
+background-color: rgb(237,237,237,0.75);
+box-shadow: 2px 2px 7px 1px #b6666f;
+margin: 10% auto;
+}
+.number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(237,237,237,0.75);
+  box-shadow: 2px 2px 7px 1px #b6666f;
+  margin: 10% auto;
+  width: 90%;
+}
+.number input {
+  width: 3em;
+}
+.number p {
+  font-size: 1em;
+  font-weight: bold;
+}
+.why {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(237,237,237,0.75);
+  box-shadow: 2px 2px 7px 1px #b6666f;
+  margin: 10% auto;
+  width: 90%;
+}
+.why p {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 1%;
+}
+.why button {
+  margin-top: 1%;
+}
+#inputFoot {
+  font-size: 0.5em;
+  color: #e0004d;
+}
+input[name="Carrusel"]{display: none}
+
+.Carrusels{
+height: 300px;
+width: 100%;
+position: relative;
+overflow-x: hidden;
+}
+.Carrusel{
+height: 100%;
+width: 100%;
+position: absolute;
+background-size: cover;
+transition: all .5s ease;
+}
+#Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(1) {transform: translate(0%, 0);}
+#Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(2) {transform: translate(100%, 0);}
+#Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(3) {transform: translate(200%, 0);}
+
+#Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(1) {transform: translate(-100%, 0);}
+#Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(2) {transform: translate(0%, 0);}
+#Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(3) {transform: translate(100%, 0);}
+
+#Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(1) {transform: translate(-200%, 0);}
+#Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(2) {transform: translate(-100%, 0);}
+#Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(3) {transform: translate(0%, 0);}
+
+.Carrusels .ArrowLeft, .Carrusels .ArrowRight{
+position: absolute;
+height: 100%;
+width: 3em;
+font-weight: bolder;
+align-items: center;
+justify-content: center;
+display: none;
+user-select: none;
+}
+.Carrusels .ArrowLeft{left: 0px;}
+.Carrusels .ArrowRight{right: 0px;}
+
+#Slider1:checked ~ .Carrusels .Arrow1{display: flex;}
+#Slider2:checked ~ .Carrusels .Arrow2{display: flex;}
+#Slider3:checked ~ .Carrusels .Arrow3{display: flex;}
+
+.Selectors {
+width: 60px;
+padding: 15px;
+display: flex;
+justify-content: space-between;
+}
+.Selectors .Selector {
+background-color: #FFF;
+height: 10px;
+width: 10px;
+display: block;
+border-radius: 5px;
+}
+
+#Slider1:checked ~ .Selectors .Selector:nth-of-type(1) {background-color: #999999;}
+#Slider2:checked ~ .Selectors .Selector:nth-of-type(2) {background-color: #999999;}
+#Slider3:checked ~ .Selectors .Selector:nth-of-type(3) {background-color: #999999;}
+
+
+
 @media (min-width:375px) {
 }
 @media (min-width: 425px) {
@@ -324,7 +449,7 @@ form>div>input{
     width: 50%;
   }
 }
-@media (max-width: 780px) {
+@media (max-width: 768px) {
   .menu-button-container {
     display: flex;
   }
@@ -364,6 +489,11 @@ form>div>input{
   }
 }
 @media (min-width: 780px) {
+  main {
+    display: grid;
+    grid-template-columns: 20% 20% 10% 10% 10% 5% 5% 20% ;
+    grid-template-rows: auto;
+  }
   .menu {
     font-size: 0.8em;
   }
@@ -383,25 +513,33 @@ form>div>input{
     height: 50px;
   }
   .slider {
-    width: 60%;
-    height: 350px;
-    margin: 5% 3% 13%;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 95%;
+    height: 300px;
     overflow: hidden;
     background-color: rgb(237,237,237,0.75);
     box-shadow: 2px 2px 7px 1px #b6666f;
+    margin-left: 5%;
   }
   .slider img {
     margin: auto 25% ;
   }
   #main1 {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 2;
     display: flex;
     flex-direction: column;
-    margin: -51.2% 3% 5% auto;
     box-shadow: 2px 2px 7px 1px #b6666f;
     background-color: rgb(237,237,237,0.75);
-    width: 30%;
-    height: 350px;
-    margin-top: -58%;
+    width: 85%;
+    height: 300px;
+    margin-top: 20%;
+    margin-left: 1%;
   }
   #textLevel {
     font-size: 2em;
@@ -424,53 +562,36 @@ form>div>input{
     margin: 20% auto 10%;
   }
   #myWallet {
-    margin: auto ;
-    width: 94%;
-    height: 250px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    flex-direction: column;
+    width: 90%;
+    height: 300px;
+    margin: 0% 0% auto 9%;
   }
   #wallet {
-    width: 25%;
+    margin-top: 3%;
+    width: 50%;
   }
   #apointsS {
-    font-size: 1.5em;
+    font-size: 1em;
+    margin-top: auto;
   }
   #apointsAmount {
-    font-size: 5em;
+    margin: auto;
+    font-size: 4em;
   }
-  #main2 {
-    margin: 5% auto 5% auto;
-    width: 94%;
- }
-  #formHead {
-  font-size: 1.5em;
- }
-  #main2, form, p {
-  font-size: 1.2em;
- }
-  #aPoints {
-  width: 15%;
-  width: 14%;
-  height: 30px;
- }
-  textarea {
-  height: 190px;
- }
-  #send {
-  font-size: 1em;
- }
-  #why {
-    font-size: 0.9em;
+  .ContainerCenter {
+    grid-column-start: 3;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 90% ;
+    height: 300px;
+    margin: auto;
   }
-  .container {
-  margin: auto;
-  border: 1px solid grey;
-  width: 40%;
-  height: 200px;
-  overflow-y: scroll;
-}
- .container>img {
-  width: 50%;
-}
 }
 @media (min-width: 1024px) {
   #user {
@@ -489,9 +610,18 @@ form>div>input{
     height: 60px;
   }
   #main1 {
-    margin-top: -46.8%;
-    width: 25%;
-    height: 450px;
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 7px 1px #b6666f;
+    background-color: rgb(237,237,237,0.75);
+    width: 85%;
+    height: 350px;
+    margin-top: 20%;
+    margin-left: 1%;
   }
   #textLevel {
     font-size: 2em;
@@ -502,12 +632,16 @@ form>div>input{
     margin-top: 30%;
   }
   .slider {
-    width: 67%;
-    height: 450px;
-    margin: 3% 3%;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 95%;
+    height: 350px;
     overflow: hidden;
     background-color: rgb(237,237,237,0.75);
     box-shadow: 2px 2px 7px 1px #b6666f;
+    margin-left: 5%;
   }
   .slider p {
     font-size: 1.8em;
@@ -519,29 +653,36 @@ form>div>input{
   .slider ul li {
     font-size: 0.8em;
   }
-  #wallet {
-    width: 15%
-  }
   #myWallet {
-    height: 200px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    flex-direction: column;
+    width: 90%;
+    height: 350px;
+    margin: 0% 0% auto 9%;
+  }
+  #wallet {
+    margin-top: 3%;
+    width: 50%;
   }
   #apointsS {
-    font-size: 1.5em;
-  }
-  #formHead {
     font-size: 1em;
+    margin-top: auto;
   }
-  #main2 label {
-    font-size: 0.5em;
+  #apointsAmount {
+    margin: auto;
+    font-size: 4em;
   }
-  #why {
-    font-size: 0.7em;
-  }
-  form {
-    width: 60%;
-  }
-  #send {
-    font-size: 0.7em;
+  .ContainerCenter {
+    grid-column-start: 3;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 90% ;
+    height: 350px;
+    margin: auto;
   }
 }
 @media (min-width: 1280px) {
@@ -561,9 +702,18 @@ form>div>input{
     height: 60px;
   }
   #main1 {
-    margin-top: -38.1%;
-    width: 25%;
-    height: 450px;
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 7px 1px #b6666f;
+    background-color: rgb(237,237,237,0.75);
+    width: 85%;
+    height: 400px;
+    margin-top: 20%;
+    margin-left: 1%;
   }
   #textLevel {
     font-size: 2em;
@@ -574,12 +724,16 @@ form>div>input{
     margin-top: 30%;
   }
   .slider {
-    width: 67%;
-    height: 450px;
-    margin: 3% 3%;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 95%;
+    height: 400px;
     overflow: hidden;
     background-color: rgb(237,237,237,0.75);
     box-shadow: 2px 2px 7px 1px #b6666f;
+    margin-left: 5%;
   }
   .slider p {
     font-size: 1.5em;
@@ -592,29 +746,36 @@ form>div>input{
   .slider ul li {
     font-size: 0.8em;
   }
-  #wallet {
-    width: 15%
-  }
   #myWallet {
-    height: 200px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    flex-direction: column;
+    width: 90%;
+    height: 400px;
+    margin: 0% 0% auto 9%;
+  }
+  #wallet {
+    margin-top: 3%;
+    width: 50%;
   }
   #apointsS {
-    font-size: 1.5em;
-  }
-  #formHead {
     font-size: 1em;
+    margin-top: auto;
   }
-  #main2 label {
-    font-size: 0.5em;
+  #apointsAmount {
+    margin: auto;
+    font-size: 4em;
   }
-  #why {
-    font-size: 0.7em;
-  }
-  form {
-    width: 60%;
-  }
-  #send {
-    font-size: 0.7em;
+  .ContainerCenter {
+    grid-column-start: 3;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 90% ;
+    height: 400px;
+    margin: auto;
   }
 }
 @media (min-width: 1440px) {
